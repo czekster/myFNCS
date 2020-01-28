@@ -16,6 +16,7 @@ This means that it worked.
 # How long will take for everything to compile?
 Depends.
 The script compiles the following frameworks:
+
 0. download and install libczmq, xterm, autoconf, libxerces and libtool (relatively fast)
 1. zeromq-3.2.4 (fast)
 2. FNCS (relatively fast)
