@@ -23,8 +23,8 @@ If everything runs fine, *three* terminals (xterm) are open, one for FNCS, anoth
 This means that it worked.
 
 # How long it will take for everything to compile?
-Depends. On a quad-core machine with 16Gb of RAM took 20 min (+-2) for all.
-The script compiles the following frameworks:
+Depends. On a shared two-core _virtual machine_ (VirtualBox) running KUbuntu with (shared) 16Gb of RAM took 20 min (+-2) for all.
+The script compiles the following sofware:
 
 0. download and install `libczmq`, `xterm`, `autoconf`, `libxerces` and `libtool` (relatively fast)
 1. `zeromq-3.2.4` (fast)
