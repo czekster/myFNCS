@@ -19,14 +19,14 @@ The GridLab-D model file is named `F1_250_house.glm`
 
 Output files are usually .csv files (several, depending on model parameters) generated during the simulation (after executing the `./run.sh` script)
 
-If everything runs fine, three terminals (xterm) are open, one for FNCS, another for ns-3.26 and another one for GridLab-D.
+If everything runs fine, *three* terminals (xterm) are open, one for FNCS, another for ns-3.26 and another one for GridLab-D.
 This means that it worked.
 
 # How long will take for everything to compile?
 Depends. On a quad-core machine with 16Gb of RAM took 20 min (+-2) for all.
 The script compiles the following frameworks:
 
-0. download and install libczmq, xterm, autoconf, libxerces and libtool (relatively fast)
+0. download and install `libczmq`, `xterm`, `autoconf`, `libxerces` and `libtool` (relatively fast)
 1. `zeromq-3.2.4` (fast)
 2. `FNCS` (relatively fast)
 3. `ns-3.26` (this one takes a while, so many files and libraries)
