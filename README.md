@@ -13,3 +13,12 @@ It uses files that were downloaded on January 27th, 2020 (I don't think the deve
 If everything runs fine, three terminals (xterm) are open, one for FNCS, another for ns-3.26 and another one for GridLab-D.
 This means that it worked.
 
+# How long will take for everything to compile?
+Depends.
+The script compiles the following frameworks:
+0. download and install libczmq, xterm, autoconf, libxerces and libtool (relatively fast)
+1. zeromq-3.2.4 (fast)
+2. FNCS (relatively fast)
+3. ns-3.26 (this one takes a while, so many files and libraries)
+4. GridLab-D (relatively fast)
+
