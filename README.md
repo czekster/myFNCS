@@ -15,7 +15,7 @@ If everything runs fine, three terminals (xterm) are open, one for FNCS, another
 This means that it worked.
 
 # How long will take for everything to compile?
-Depends. On a quad-core machine with 16Gb of RAM took 30 min to 45 min for all.
+Depends. On a quad-core machine with 16Gb of RAM took 20 min (+-2) for all.
 The script compiles the following frameworks:
 
 0. download and install libczmq, xterm, autoconf, libxerces and libtool (relatively fast)
