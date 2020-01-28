@@ -11,6 +11,11 @@ It uses files that were downloaded on January 27th, 2020 (I don't think the deve
 2. chmod a+x install-fncs.sh
 3. ./install-fncs.sh
 
+The models are located under the $HOME/myFNCS/gridlab-d/FNCS-Tutorial/demo-gld-ns3/ folder
+The ns-3 model file is named firstN.cc
+The GridLab-D model file is named F1_250_house.glm
+Output files are usually .csv files (several, depending on model parameters) generated during the simulation (after running ./run.sh script)
+
 If everything runs fine, three terminals (xterm) are open, one for FNCS, another for ns-3.26 and another one for GridLab-D.
 This means that it worked.
 
