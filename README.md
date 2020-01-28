@@ -22,7 +22,7 @@ Output files are usually .csv files (several, depending on model parameters) gen
 If everything runs fine, *three* terminals (xterm) are open, one for FNCS, another for ns-3.26 and another one for GridLab-D.
 This means that it worked.
 
-# How long will take for everything to compile?
+# How long it will take for everything to compile?
 Depends. On a quad-core machine with 16Gb of RAM took 20 min (+-2) for all.
 The script compiles the following frameworks:
 
