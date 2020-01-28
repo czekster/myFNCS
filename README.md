@@ -1,6 +1,7 @@
 # myFNCS
 
 This will install and run everything needed for FNCS (FNCS, GridLab-D, ns-3.26, zeromq, libczmq-dev (ubuntu), xterm, autoconf, libxerces, libtool).
+
 It starts the FNCS tutorial (https://github.com/FNCS/FNCS-Tutorial/tree/master/demo-gld-ns3) if everything went all right.
 
 It uses files that were downloaded on January 27th, 2020 (I don't think the developers are maintaining FNCS nowadays).
@@ -21,5 +22,5 @@ The script compiles the following frameworks:
 1. zeromq-3.2.4 (fast)
 2. FNCS (relatively fast)
 3. ns-3.26 (this one takes a while, so many files and libraries)
-4. GridLab-D (relatively fast)
+4. GridLab-D (medium - lots of solvers, climate modules, powerflow algorithms, etc.)
 
