@@ -3,6 +3,7 @@
 This will install and run everything needed for FNCS (`FNCS`, `GridLab-D`, `ns-3.26`, `zeromq`, `libczmq-dev` (in Ubuntu), `xterm`, `autoconf`, `libxerces`, `libtool`).
 
 It starts the FNCS tutorial (https://github.com/FNCS/FNCS-Tutorial/tree/master/demo-gld-ns3) if everything went all right.
+You should see two xterm screens generating output (without errors) and another xterm with the FNCS (which is the middleware for GridLab-D plus ns-3) -- *in total there are three xterm windows*.
 
 It uses files that were downloaded on January 27th, 2020 (I don't think the developers are maintaining FNCS nowadays).
 
