@@ -1,6 +1,6 @@
 # myFNCS
 
-This will install and run everything needed for FNCS (`FNCS`, `GridLab-D`, `ns-3.26`, `zeromq`, `libczmq-dev` (ubuntu), `xterm`, `autoconf`, `libxerces`, `libtool`).
+This will install and run everything needed for FNCS (`FNCS`, `GridLab-D`, `ns-3.26`, `zeromq`, `libczmq-dev` (in Ubuntu), `xterm`, `autoconf`, `libxerces`, `libtool`).
 
 It starts the FNCS tutorial (https://github.com/FNCS/FNCS-Tutorial/tree/master/demo-gld-ns3) if everything went all right.
 
@@ -12,10 +12,11 @@ It has worked on [Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads) 
 
 1. Download VirtualBox
 2. Download an iso for the KUbuntu
---
-3. Unzip the first file (`myFNCS.7z.001`) to your `$HOME` directory (e.g. for john, location is `/home/john/myFNCS`)
-4. change script to execution mode: `chmod a+x install-fncs.sh`
-5. run `./install-fncs.sh`
+3. Install KUbuntu (standard installation)
+--------
+4. Unzip the first file (`myFNCS.7z.001`) to your `$HOME` directory (e.g. for john, location is `/home/john/myFNCS`)
+5. change script to execution mode: `chmod a+x install-fncs.sh`
+6. run `./install-fncs.sh`
 
 The models are located under the `$HOME/myFNCS/gridlab-d/FNCS-Tutorial/demo-gld-ns3/` folder
 
