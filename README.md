@@ -16,7 +16,8 @@ It has worked on [Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads) 
 3. Install KUbuntu (standard installation)
 --------
 4. Unzip the first file (`myFNCS.zip.001`) to your `$HOME` directory (e.g. for john, location is `/home/john/myFNCS`)
-   - in GNU/Linux, you must merge the parts first: `cat myFNCS.zip* > ~/all.zip` then `mv all.zip ~` and `cd ~ && unzip all.zip` (this will create a folder `~/myFNCS`)
+   - **important**: the location must be at `~\myFNCS` otherwise it won't work!
+   - in GNU/Linux, you must merge the .zip parts first: `cat myFNCS.zip* > ~/all.zip` then `mv all.zip ~ ; cd ~ ; unzip all.zip` (this will create a folder `~/myFNCS`)
 5. change script to execution mode: `chmod a+x install-fncs.sh`
 6. run `./install-fncs.sh`
 
