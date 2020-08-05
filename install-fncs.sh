@@ -3,12 +3,9 @@
 # 05-August-2020
 # Author: Ricardo M. Czekster
 
-# this script will install and run FNCS - FNCS-tutorial provided in https://github.com/FNCS/FNCS-Tutorial/tree/master/demo-gld-ns3
+# this script will install and run FNCS
+# then, it will execute the FNCS-tutorial provided in https://github.com/FNCS/FNCS-Tutorial/tree/master/demo-gld-ns3
 
-#start cleaning the folders, etc.
-#./clean.sh
-
-# FNCS requires xterm to open multiple terminals (-i will avoid asking again the sudo pwd)
 sudo apt-get update && sudo apt-get upgrade -y
 sudo apt-get -y install xterm make g++ git libczmq-dev libsodium-dev pkg-config
 
@@ -68,14 +65,14 @@ export LD_LIBRARY_PATH="$HOME/FNCS_install/lib:$HOME/FNCS_install/lib/gridlabd/"
 export FNCS_INSTALL="$HOME/FNCS_install"
 export FNCS_FATAL=yes
 
-
 # Testing - running the FNCS-Tutorial example
 cd $HOME/myFNCS/
 git clone https://github.com/FNCS/FNCS-Tutorial
+
 cd FNCS-Tutorial/demo-gld-ns3
 ./compile-ns3.sh
 
-echo "type './run.sh' to execute the FNCS-Tutorial
+echo "type './run.sh' to execute the FNCS-Tutorial"
 
 
 
