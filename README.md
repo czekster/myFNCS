@@ -1,11 +1,10 @@
 # myFNCS
 
-This will install and run everything needed for FNCS (`FNCS`, `GridLab-D`, `ns-3.26`, `zeromq`, `libczmq-dev` (in Ubuntu), `xterm`, `autoconf`, `libxerces`, `libtool`).
+This will install and run everything needed for FNCS (`FNCS`, `GridLab-D`, `ns-3.26`, `zeromq`, `libczmq-dev` (in Ubuntu), `xterm`, `autoconf`, `libxerces`, `libtool`, and other auxiliary tools -- more info on the attached script).
 
 It starts the FNCS tutorial (https://github.com/FNCS/FNCS-Tutorial/tree/master/demo-gld-ns3) if everything went all right.
-You should see two xterm screens generating output (without errors) and another xterm with the FNCS (which is the middleware for GridLab-D plus ns-3) -- *in total there are three xterm windows*.
 
-It uses files that were downloaded on January 27th, 2020 (I don't think the developers are maintaining FNCS nowadays).
+After running the tutorial, you should see two xterm screens generating output (without errors) and another xterm with the FNCS (which is the middleware for GridLab-D plus ns-3) -- *in total there are three xterm windows*.
 
 # How to use it?
 
@@ -13,21 +12,16 @@ It has worked on [Oracle VirtualBox](https://www.virtualbox.org/wiki/Downloads) 
 
 1. Download VirtualBox
 2. Download an iso for the KUbuntu
-3. Install KUbuntu (standard installation)
+3. Install KUbuntu (standard installation or your preferred 'flavor')
 --------
-4. Unzip the first file (`myFNCS.zip.001`) to your `$HOME` directory (e.g. for john, location is `/home/john/myFNCS`)
-   - **important**: the location must be at `~\myFNCS` otherwise it won't work!
-   - in GNU/Linux, you must merge the .zip parts first: `cat myFNCS.zip* > ~/all.zip` then `mv all.zip ~ ; cd ~ ; unzip all.zip` (this will create a folder `~/myFNCS`)
 5. change script to execution mode: `chmod a+x install-fncs.sh`
 6. run `./install-fncs.sh`
 
-The models are located under the `$HOME/myFNCS/gridlab-d/FNCS-Tutorial/demo-gld-ns3/` folder
+The models are located under the `$HOME/myFNCS/FNCS-Tutorial/demo-gld-ns3/` folder
 
 The ns-3 model file is named `firstN.cc`
 
 **The GridLab-D model file is named `F1_250_house.glm`** (all information as to the Test Feeder, power supply, households, appliances for each one of the 250 houses) as well as their scheduling is in this file. This is the energy part where GridLab-D will run. **The network part is in the `firstN.cc` file (with ns-3 commands)**. It maps each household to an IP address.
-
-I have added those two models into GitHub at (https://github.com/czekster/myFNCS/blob/master/F1_250_house.glm) and (https://github.com/czekster/myFNCS/blob/master/firstN.cc) -- just to easy online visuallisation because they will be located at `$HOME/gridlab-d/FNCS-Tutorial/demo-gld-ns3/`.
 
 Output files are usually .csv files (several, depending on model parameters) generated during the simulation, after executing the `./run.sh` script.
 
